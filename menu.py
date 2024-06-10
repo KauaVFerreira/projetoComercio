@@ -211,4 +211,5 @@ def opcaobd():
                     comentario = input('\nFaça seu comentário: ')
                     avaliacao = input('\nDe 1 a 5, digite quantas estrelas você dá a esse produto: ')
                     data = date.today()   
-                    cadastrarComentario(conbd,nome,sobrenome,nomeProduto,comentario,avaliacao,data)        
+                    cadastrarComentario(conbd,nome,sobrenome,nomeProduto,comentario,avaliacao,data)
+        
