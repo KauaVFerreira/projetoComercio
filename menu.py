@@ -36,14 +36,17 @@ def opcaobd():
                     elif conf == '2':
                         print ('\nOperação cancelada.')
                     else:
-                        print ('Você digitou uma opção inválida, a operação foi cancelada.')
+                        print ('\nVocê digitou uma opção inválida, a operação foi cancelada.')
                 elif option == '3':    
                     listarProdutos(conbd)
                 elif option == '4':
+                    nomeAtual = input ('\nDigite o nome do produto que deseja alterar: ')
+                    print ('\n------Digite abaixo as informações atualizadas------ ')
                     nome = input ('\nNome do produto: ')
                     descricao = input ('\nDescrição do produto: ')
                     preco = float(input ('\nPreço do produto: '))
-                    atualizarProdutos(conbd, nome, descricao, preco, nomeAtual)
+                    quantidade = input ('\nQuantidade do produto: ')
+                    atualizarProdutos(conbd, nome, descricao, preco, quantidade, nomeAtual)
         elif option == '2':      
             print ('---------------------------------\nDigite: \n1- Para cadastrar clientes \n2- Para deletar clientes \n3- Para listar clientes \n4- Para atualizar clientes \n0- Para voltar \n---------------------------------')    
             while True:
@@ -68,7 +71,7 @@ def opcaobd():
                     elif conf == '2':
                         print ('\nOperação cancelada.')
                     else:
-                        print ('Você digitou uma opção inválida, a operação foi cancelada.')
+                        print ('\nVocê digitou uma opção inválida, a operação foi cancelada.')
                 elif option == '3':
                     listarClientes(conbd)
                 elif option == '4':
@@ -102,7 +105,7 @@ def opcaobd():
                     elif conf == '2':
                         print ('\nOperação cancelada.')
                     else:
-                        print ('Você digitou uma opção inválida, a operação foi cancelada.') 
+                        print ('\nVocê digitou uma opção inválida, a operação foi cancelada.') 
                 elif option == '3':
                     listarFuncionarios(conbd)
                 elif option == '18':
@@ -133,7 +136,7 @@ def opcaobd():
                     elif conf == '2':
                         print ('\nOperação cancelada.')
                     else:
-                        print ('Você digitou uma opção inválida, a operação foi cancelada.')
+                        print ('\nVocê digitou uma opção inválida, a operação foi cancelada.')
                 elif option == '3':
                     listarFornecedores(conbd)
                 elif option == '4':
@@ -167,7 +170,7 @@ def opcaobd():
                     elif conf == '2':
                         print ('\nOperação cancelada.')
                     else:
-                        print ('Você digitou uma opção inválida, a operação foi cancelada.')
+                        print ('\nVocê digitou uma opção inválida, a operação foi cancelada.')
                 elif option == '3':
                     listarPromocoes(conbd)
                 elif option == '4':
